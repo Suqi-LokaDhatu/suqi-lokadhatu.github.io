@@ -1,16 +1,15 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Súqì · LokaDhātu</title>
-   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #CFE8DC;
       color: #006957;
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Quicksand', sans-serif; /* 默认英文用 Quicksand Light */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,17 +20,37 @@
     h1 {
       font-size: 3em;
       margin-bottom: 0.3em;
+      font-weight: 100; /* 设置为 Quicksand 最细 */
     }
     p {
       font-size: 1.2em;
       max-width: 500px;
+      font-family: 'FangSong', '仿宋', sans-serif; /* 中文使用仿宋 */
+      font-weight: 100; /* 保持英文的 Quicksand Light 样式 */
+    }
+    /* 按钮样式 */
+    .portfolio-btn {
+      display: inline-block;
+      background-color: #006957;
+      color: white;
+      padding: 15px 30px;
+      margin-top: 20px;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .portfolio-btn:hover {
+      background-color: #004d3d;
     }
   </style>
 </head>
 <body>
   <div>
     <h1>Súqì</h1>
-    <p>俗气 <br> 
+    <p>俗气 - A world I choose to embrace. <br> <!-- 保留中文“俗气”，其余用英文 -->
+    <!-- 作品集链接按钮 -->
+    <a href="portfolio.html" class="portfolio-btn">View My Portfolio</a>
   </div>
 </body>
 </html>
